@@ -4,12 +4,15 @@ class Cell
 public:
 	Cell(void);
 	~Cell(void);
-	double x1,x2,y1,y2,cx,cy;
-		int pointnum0,pointnum1,pointnum2,pointnum3;
+		int cellface1,cellface2,cellface3,cellface4;
+		int num;
 		bool switcher;
-		Cell(int n1,int n2,int n3,int n4){
-			pointnum0=n1;pointnum1=n2;pointnum2=n3;pointnum3=n4;
-			switcher=true;
-		}
+		Cell(int f1, int f2, int f3, int f4,int n){
+			cellface1=f1;
+			cellface2=f2;
+			cellface3=f3;
+			cellface4=f4;
+			num=n;
+			switcher=true;}
 };
 
